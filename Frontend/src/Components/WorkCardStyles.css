@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Schoolbell&display=swap');
+
+.project-heading {
+    text-align: center;
+    color: #FEDBD0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    padding: 4rem 0 2rem 0;
+}
+
+.project-container {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    padding-bottom: 5rem;
+    border-radius: 50px;
+}
+
+.image {
+    padding: 10px;
+}
+
+
+.project-card {
+    background: linear-gradient(360deg, #223343 40%, #6aa4ca 100%);
+    padding: 1.2rem 1rem;
+    border-radius: 15px;
+    border: 3px solid white;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid rgb(231, 239, 8);
+    border-radius: 8px;
+}
+
+.project-card img:hover {
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+
+.project-title {
+    color: lightsalmon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1rem;
+}
+
+.paraprocard {
+    /* font-style: oblique; */
+    /* font-family: 'Schoolbell', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: rgb(251, 249, 249);
+}
+
+.btns {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 12px 32px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #153e49 0%, #3c6a7d 51%, #153e49 100%);
+    color: #b2b229;
+    border-radius: 20px;
+    border: 2px solid green;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.btns:hover {
+    transition: 1s;
+    color: #FEDBD0;
+    background: #121313;
+}
+
+.pro-btns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pro-btns .btn {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width:740px) {
+    .project-container {
+        max-width: 90%;
+        margin: auto;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+}

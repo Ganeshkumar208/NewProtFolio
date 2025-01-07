@@ -1,0 +1,77 @@
+.hero-img {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    position: relative;
+}
+
+.heading {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+.parahead {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.parapro {
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkturquoise;
+}
+
+.hero-img h1 {
+    font-size: 2.4rem;
+}
+
+.hero-img p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+.parapro {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 12s steps(360) forwards, blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCaret {
+    100% {
+        border-color: transparent;
+    }
+}
+
+@media screen and (max-width:640) {
+    .hero-img h1 {
+        font-size: 2.4rem;
+    }
+}

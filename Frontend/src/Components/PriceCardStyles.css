@@ -1,0 +1,117 @@
+.pricing {
+    width: 100%;
+    padding: 6rem 1rem;
+    background: #000;
+}
+
+.card-container {
+    max-width: fit-content;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+
+.card {
+    border-radius: 20px;
+    border: 4px solid #39650b;
+    width: 350px;
+    height: 500px;
+    color: #eee;
+    text-align: center;
+    padding: -10px;
+}
+
+.card:hover {
+    background-color: #141414;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: aqua;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+.card p {
+    padding: 15px;
+}
+
+.bar {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.btc {
+    font-size: 3rem;
+    color: yellow;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.card .btn {
+    display: block;
+    width: 65%;
+    margin: 2rem auto;
+}
+
+.btn {
+    padding: 10px 40px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(to right, #232323 0%, #C4E0E5 51%, #232323 100%);
+    box-shadow: 3px 3px 5px 0 rgba(236, 236, 235, 0.9);
+    border-radius: 15px;
+    color: #222;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-light {
+    background: transparent;
+    color: #fff;
+}
+
+.btn:hover {
+    background: rgb(0, 0, 0);
+    transition: 2s;
+    color: #f8fdfd;
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #4CA1AF 0%, #C4E0E5 51%, #4CA1AF 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:740px) {
+    .card-container {
+        max-width: 90%;
+        margin: auto;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+}

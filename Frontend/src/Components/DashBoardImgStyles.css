@@ -1,0 +1,172 @@
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* .intro-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit:cover;
+}
+
+.hero .content{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 500px;
+    top: 50%;
+    left: 50%;
+} */
+
+.paradash,
+.newpara {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(30) forwards, blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes blinkCaret {
+    80% {
+        border-color: transparent;
+    }
+}
+
+.paradash {
+    margin-left: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color: aquamarine;
+}
+
+.newpara {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color: darkcyan;
+    text-align: center;
+    margin-left: 45px;
+}
+
+.mask::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 100px;
+    gap: 10px;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+}
+
+.hero .content h1 {
+    font-size: 3rem;
+    padding: 0.6rem 0 1.5rem;
+}
+
+.hero .content p {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.content .btn {
+    margin: 1rem 0.2rem;
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+    .hero .content h1 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        margin-left: -2px;
+    }
+
+    .hero .content p {
+        font-size: 1.4rem;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+}
+
+
+.hell {
+    padding: 15px 40px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    box-shadow: 3px 3px rgb(238, 237, 234);
+    border-radius: 15px;
+    color: #222;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-lights {
+    background: black;
+    color: #fff;
+}
+
+.hell:hover {
+    background: rgb(74, 61, 61);
+    transition: 2s;
+    color: #060606;
+}
+
+
+.hero .content {
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-left: 200px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 500px;
+    top: 50%;
+    left: 50%;
+}
+
+.intro-img {
+    width: 400px;
+    height: 70vh;
+    border: 5px solid rgb(119, 108, 10);
+    /* box-shadow: 15px 15px 15px rgb(154, 101, 101); */
+    filter: drop-shadow(1px 1px 20px rgb(22, 224, 160));
+    margin-top: 150px;
+    margin-left: 240px;
+    border-radius: 60%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
